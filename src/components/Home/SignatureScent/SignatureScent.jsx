@@ -18,10 +18,12 @@ const SignatureScent = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
-        //   observer.disconnect()
-        }else {
-  setIsVisible(false)
-}
+          observer.disconnect()
+        }
+
+  // else {
+  // setIsVisible(false)}
+
       },
       { threshold: 0.15, rootMargin: '0px 0px -5% 0px' },
     )

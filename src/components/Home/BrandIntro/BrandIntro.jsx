@@ -1,8 +1,42 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const BrandIntro = () => {
+  const sectionRef = useRef(null)
+  const [isVisible, setIsVisible] = useState(
+    () => typeof IntersectionObserver === 'undefined',
+  )
+
+  useEffect(() => {
+    const section = sectionRef.current
+
+    if (!section) return
+
+    if (typeof IntersectionObserver === 'undefined') return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+          observer.disconnect()
+        }
+
+        // else { setIsVisible(false)}
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -5% 0px' },
+    )
+
+    observer.observe(section)
+    return () => observer.disconnect()
+  }, [])
+
+
   return (
-    <section className="border-t border-[#c9a76a]/30 bg-gradient-to-b from-[#241612] via-[#3b2118] to-[#57301f] px-6 py-24 text-[#f5ead8] tablet:py-32 laptop:py-40">
+    <section
+      ref={sectionRef}
+      className={`border-t border-[#c9a76a]/30 bg-gradient-to-b from-[#241612] via-[#3b2118] to-[#57301f] px-6 py-24 text-[#f5ead8] transition-[opacity,transform] duration-1000 ease-out motion-reduce:transform-none motion-reduce:transition-none tablet:py-32 laptop:py-40 ${
+        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
+      }`}
+    >
       <div className="mx-auto max-w-[900px] text-center">
 
         <p className="text-xs font-medium uppercase tracking-[0.32em] text-[#dfbd7a]">

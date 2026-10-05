@@ -1,14 +1,51 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import v2 from '../../../assets/v2.png'
 import v8 from '../../../assets/v8.png'
 const FeaturedCollection = () => {
+  const sectionRef = useRef(null)
+  const [isVisible, setIsVisible] = useState(
+    () => typeof IntersectionObserver === 'undefined',
+  )
+
+  useEffect(() => {
+    const section = sectionRef.current
+
+    if (!section) return
+
+    if (typeof IntersectionObserver === 'undefined') return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        //   observer.disconnect()
+        }else {
+  setIsVisible(false)
+}
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -5% 0px' },
+    )
+
+    observer.observe(section)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section className="border-t border-[#c9a76a]/30 bg-gradient-to-br from-[#684638] via-[#49332e] to-[#30231f] px-6 py-24 text-[#f5ead8] tablet:py-32 laptop:py-40">
+    <section
+      ref={sectionRef}
+      className={`border-t border-[#c9a76a]/30 bg-gradient-to-br from-[#684638] via-[#49332e] to-[#30231f] px-6 py-24 text-[#f5ead8] transition-[opacity,transform] duration-1000 ease-out motion-reduce:transform-none motion-reduce:transition-none tablet:py-32 laptop:py-40 ${
+        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
+      }`}
+    >
       <div className="mx-auto max-w-[1800px]">
 
         {/* Section Header */}
-        <div className="mb-14 text-center tablet:mb-20">
+        <div
+          className={`mb-14 text-center transition-[opacity,transform] duration-1000 ease-out motion-reduce:transform-none motion-reduce:transition-none tablet:mb-20 ${
+            isVisible ? 'translate-y-0 opacity-100 delay-100' : 'translate-y-6 opacity-0'
+          }`}
+        >
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#dfbd7a]">
             The Collection
           </p>
@@ -21,7 +58,11 @@ const FeaturedCollection = () => {
         {/* Featured Products */}
         <div className="grid gap-8 tablet:grid-cols-2 laptop:gap-10">
           
-          <article>
+          <article
+            className={`transition-[opacity,transform] duration-1000 ease-out motion-reduce:transform-none motion-reduce:transition-none ${
+              isVisible ? 'translate-y-0 opacity-100 delay-150' : 'translate-y-6 opacity-0'
+            }`}
+          >
             <div className="aspect-[4/5] overflow-hidden">
               <img
                 src={v2}
@@ -41,7 +82,11 @@ const FeaturedCollection = () => {
             </div>
           </article>
 
-          <article>
+          <article
+            className={`transition-[opacity,transform] duration-1000 ease-out motion-reduce:transform-none motion-reduce:transition-none ${
+              isVisible ? 'translate-y-0 opacity-100 delay-300' : 'translate-y-6 opacity-0'
+            }`}
+          >
             <div className="aspect-[4/5] overflow-hidden">
               <img
                 src={v8}
@@ -64,7 +109,11 @@ const FeaturedCollection = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-14 text-center tablet:mt-20">
+        <div
+          className={`mt-14 text-center transition-[opacity,transform] duration-1000 ease-out motion-reduce:transform-none motion-reduce:transition-none tablet:mt-20 ${
+            isVisible ? 'translate-y-0 opacity-100 delay-300' : 'translate-y-6 opacity-0'
+          }`}
+        >
           <Link
             to="/collection"
             className="

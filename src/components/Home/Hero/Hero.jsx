@@ -8,6 +8,11 @@ const Hero = () => {
       {/* Hero Image */}
       <HeroImage />
 
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#241612]/70 via-[#241612]/35 to-transparent"
+      />
+
       {/* Hero Content */}
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto w-full max-w-[1800px] px-6">

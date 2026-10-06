@@ -19,10 +19,6 @@ const NavLinks = () => {
       name: 'Gallery',
       path: '/gallery',
     },
-    {
-      name: 'Contact',
-      path: '/contact',
-    },
   ]
 
   return (
@@ -33,13 +29,17 @@ const NavLinks = () => {
             to={link.path}
             className="
               relative
-              text-sm
+              text-xs
               font-medium
-              tracking-wide
-              text-[#f5efe6]
+              uppercase
+              tracking-[0.16em]
+              text-[#fff6e8]
               transition-colors
               duration-300
-              hover:text-white
+              hover:text-[#e2c68d]
+              focus-visible:outline-2
+              focus-visible:outline-offset-8
+              focus-visible:outline-[#e2c68d]
             "
           >
             {link.name}

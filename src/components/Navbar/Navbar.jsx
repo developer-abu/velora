@@ -6,7 +6,7 @@ import logoImg from '/favicon.png'
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full">
+    <nav className="fixed left-0 top-0 z-50 w-full bg-gradient-to-b from-[#211610]/90 via-[#211610]/65 to-transparent">
       <div className="mx-auto flex h-20 max-w-[1800px] items-center justify-between px-6">
 
         {/* Logo */}
@@ -27,7 +27,7 @@ const [isOpen, setIsOpen] = useState(false)
         <div className="hidden laptop:block">
           <Link
             to="/collection"
-            className="inline-flex min-h-11 items-center justify-center px-6"
+            className="inline-flex min-h-11 items-center justify-center border border-[#e2c68d] bg-[#e2c68d] px-6 text-xs font-semibold uppercase tracking-[0.16em] text-[#241612] shadow-lg shadow-black/15 transition-all duration-300 hover:border-[#f0dcae] hover:bg-[#f0dcae]"
           >
             Explore Collection
           </Link>

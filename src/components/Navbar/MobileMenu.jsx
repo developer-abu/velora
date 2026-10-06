@@ -135,9 +135,10 @@ to-[#57301F]
                 onClick={handleClose}
                 className="
                   text-base
-                  font-medium
-                  tracking-[0.12em]
-                  text-[#d4af5a]
+                  font-serif
+                  text-xl
+                  tracking-[0.04em]
+                  text-[#fff0d8]
                   transition-colors
                   duration-300
                   hover:text-[#e6c56f]
@@ -160,15 +161,16 @@ to-[#57301F]
                 border
                 border-[#d4af5a]/70
                 px-8
-                text-sm
-                font-medium
+                text-xs
+                font-semibold
                 uppercase
-                tracking-[0.2em]
-                text-[#d4af5a]
+                tracking-[0.16em]
+                text-[#241612]
+                bg-[#e2c68d]
                 transition-all
                 duration-300
-                hover:border-[#e6c56f]
-                hover:text-[#e6c56f]
+                hover:border-[#f0dcae]
+                hover:bg-[#f0dcae]
               "
             >
               Explore Collection

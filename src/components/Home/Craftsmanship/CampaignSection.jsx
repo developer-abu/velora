@@ -42,6 +42,8 @@ const observer = new IntersectionObserver(
         {/* Campaign Image */}
         <div className="aspect-square overflow-hidden bg-[#d8bea3]">
           <img
+           loading="lazy"
+            decoding="async"
             src={campaignImage}
             alt="Velora fragrance campaign"
             className="h-full w-full object-contain"

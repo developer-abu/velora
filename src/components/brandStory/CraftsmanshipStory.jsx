@@ -49,6 +49,8 @@ const CraftsmanshipStory = () => {
         >
           <img
             src={craftsmanshipImage}
+             loading="lazy"
+              decoding="async"
             alt="Velora fragrance craftsmanship"
             className="aspect-[4/5] h-full w-full object-cover"
           />

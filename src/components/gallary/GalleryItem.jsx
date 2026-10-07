@@ -6,6 +6,8 @@ const GalleryItem = ({ item }) => {
       <img
         src={item.image}
         alt={item.alt}
+         loading="lazy"
+        decoding="async"
         className="
           h-full
           w-full

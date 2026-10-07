@@ -46,6 +46,8 @@ const SignatureScent = () => {
           }`}
         >
           <img
+           loading="lazy"
+            decoding="async"
             src={signatureScent}
             alt="Velora signature fragrance"
             className="h-full w-full object-cover"

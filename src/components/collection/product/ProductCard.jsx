@@ -7,6 +7,8 @@ const ProductCard = ({ product }) => {
    
         <div className="aspect-[4/5] overflow-hidden border border-[#c9a76a]/15 bg-[#241612]/40 hover:scale-105 transition-transform duration-100">
           <img
+           loading="lazy"
+            decoding="async"
             src={product.image}
             alt={product.name}
             className="

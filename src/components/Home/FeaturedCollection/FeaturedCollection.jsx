@@ -64,7 +64,8 @@ const FeaturedCollection = () => {
             }`}
           >
             <div className="aspect-[4/5] overflow-hidden">
-              <img
+              <img  loading="lazy"
+                decoding="async"
                 src={v2}
                 alt="Velora fragrance"
                 className="h-full w-full object-cover"
@@ -89,6 +90,8 @@ const FeaturedCollection = () => {
           >
             <div className="aspect-[4/5] overflow-hidden">
               <img
+               loading="lazy"
+                decoding="async"
                 src={v8}
                 alt="Velora fragrance"
                 className="h-full w-full object-cover"

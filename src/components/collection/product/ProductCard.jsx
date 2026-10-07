@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const ProductCard = ({ product }) => {
   return (
     <article>
-      <Link to={`/collection/${product.id}`} className="group block">
-        <div className="aspect-[4/5] overflow-hidden border border-[#c9a76a]/15 bg-[#241612]/40">
+   
+        <div className="aspect-[4/5] overflow-hidden border border-[#c9a76a]/15 bg-[#241612]/40 hover:scale-105 transition-transform duration-100">
           <img
             src={product.image}
             alt={product.name}
@@ -34,7 +34,7 @@ const ProductCard = ({ product }) => {
             {product.description}
           </p>
         </div>
-      </Link>
+
     </article>
   )
 }

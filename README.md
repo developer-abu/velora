@@ -15,7 +15,6 @@
   <a href="#-tech-stack">Tech Stack</a> •
   <a href="#-project-structure">Structure</a> •
   <a href="#-pages">Pages</a> •
-  <a href="#-installation">Installation</a>
 </p>
 
 ---
@@ -140,14 +139,12 @@ The goal is to make the **brand and fragrance imagery the primary focus**.
 | JavaScript | Application logic |
 | Tailwind CSS | Styling |
 | React Router | Client-side routing |
-| Framer Motion | Animations |
 | Lucide React | Icons |
 
 ### Design
 
 - Luxury editorial layout
 - Responsive imagery
-- Custom typography
 - Minimal color palette
 - Responsive spacing
 - Subtle motion
@@ -171,7 +168,6 @@ breakpoints.
 
 Example:
 
-```jsx
-<div className="text-3xl tablet:text-5xl laptop:text-6xl">
-  Velora
-</div>
+
+
+### Velora

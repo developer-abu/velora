@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import signatureScent from '../../../assets/v5.png'
+import signatureScent from '../../../assets/v5.webp'
 const SignatureScent = () => {
   const sectionRef = useRef(null)
   const [isVisible, setIsVisible] = useState(

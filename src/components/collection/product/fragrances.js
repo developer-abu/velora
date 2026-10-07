@@ -1,9 +1,9 @@
-import fragranceOne from '../../../assets/v23.png'
-import fragranceTwo from '../../../assets/v25.png'
-import fragranceThree from '../../../assets/v19.png'
-import fragranceFour from '../../../assets/v21.png'
-import fragranceFive from '../../../assets/v14.png'
-import fragranceSix from '../../../assets/v12.png'
+import fragranceOne from '../../../assets/v23.webp'
+import fragranceTwo from '../../../assets/v25.webp'
+import fragranceThree from '../../../assets/v19.webp'
+import fragranceFour from '../../../assets/v21.webp'
+import fragranceFive from '../../../assets/v14.webp'
+import fragranceSix from '../../../assets/v12.webp'
 
 const fragrances = [
   {

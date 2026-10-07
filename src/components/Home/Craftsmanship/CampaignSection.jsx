@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import campaignImage from '../../../assets/v3.png'
+import campaignImage from '../../../assets/v3.webp'
 
 const CampaignSection = () => {
   const sectionRef = useRef(null)

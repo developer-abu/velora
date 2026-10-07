@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import v2 from '../../../assets/v2.png'
-import v8 from '../../../assets/v8.png'
+import v2 from '../../../assets/v2.webp'
+import v8 from '../../../assets/v8.webp'
 const FeaturedCollection = () => {
   const sectionRef = useRef(null)
   const [isVisible, setIsVisible] = useState(

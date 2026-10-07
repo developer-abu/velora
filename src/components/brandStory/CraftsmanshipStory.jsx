@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import craftsmanshipImage from '../../assets/v25.png'
+import craftsmanshipImage from '../../assets/v25.webp'
 
 const CraftsmanshipStory = () => {
   const sectionRef = useRef(null)

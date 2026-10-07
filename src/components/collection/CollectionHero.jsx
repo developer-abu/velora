@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
-import v23 from "../../assets/v23.png"
-import v18 from "../../assets/v18.png"
-import v20 from "../../assets/v20.png"
-import v25 from "../../assets/v25.png"
-import v11 from "../../assets/v11.png"
-import v3 from "../../assets/v3.png"
+import v23 from "../../assets/v23.webp"
+import v18 from "../../assets/v18.webp"
+import v20 from "../../assets/v20.webp"
+import v25 from "../../assets/v25.webp"
+import v11 from "../../assets/v11.webp"
+import v3 from "../../assets/v3.webp"
 
 const CollectionHero = () => {
   const sectionRef = useRef(null)

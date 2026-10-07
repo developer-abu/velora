@@ -1,11 +1,11 @@
 import React from 'react'
 // import heroImg from '../../../assets/v10.png'
-import heroMobile from './hero-mobile.png'
-import heroMobileLg from './hero-mobile-lg.png'
-import heroTablet from './hero-tablet.png'
-import heroLaptop from './hero-laptop.png'
-import heroDesktop from './hero-dekstop.png'
-import heroLergerDesktop from './hero-desktop-lerger.png'
+import heroMobile from './hero-mobile.webp'
+import heroMobileLg from './hero-mobile-lg.webp'
+import heroTablet from './hero-tablet.webp'
+import heroLaptop from './hero-laptop.webp'
+import heroDesktop from './hero-dekstop.webp'
+import heroLergerDesktop from './hero-desktop-lerger.webp'
 const HeroImage = () => {
   return (
     <div className="absolute inset-0">

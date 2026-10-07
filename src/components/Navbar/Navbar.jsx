@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
 import MobileMenu from './MobileMenu'
-import logoImg from '/favicon.png'
+import logoImg from '/favicon.webp'
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false)
   return (

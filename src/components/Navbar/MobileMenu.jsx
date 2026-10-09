@@ -21,10 +21,6 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
       name: 'Gallery',
       path: '/gallery',
     },
-    {
-      name: 'Contact',
-      path: '/contact',
-    },
   ]
 
   const handleClose = () => {
